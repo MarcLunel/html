@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Title</title>
+	<meta charset="utf-8">
+	<meta name="description" content="All HTML5 Tag"/>
+	<meta name="author" content="Marc Lunel"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<!-- TITLES -->
+	<h1>This is heading 1</h1>
+	<h2>This is heading 2</h2>
+	<h3>This is heading 3</h3>
+	<h4>This is heading 4</h4>
+	<h5>This is heading 5</h5>
+	<h6>This is heading 6</h6>
+
+	<!-- TEXT -->
+	<p>This is paragraph.</p>
+	<p>I am <b>Marc</b>. What do you think about <i>Tim Berners-Lee</i> ? He <q>seems</q> to be a <u>good guy</u>. DID YOU HEAR ? <big>HE IS A GOOD GUY !</big></p>
+	<center>Hey ! I am in the center !</center>
+	<p><em>Emphasized text</em><br>
+	<strong>Strong text</strong><br>
+	<code>A piece of computer code</code><br>
+	<samp>Sample output from a computer program</samp><br>
+	<kbd>Keyboard input</kbd><br>
+	<var>Variable</var></p>
+
+	<!-- INLINE BLOCK ELEMENT -->
+	<div>
+		<span>Hello span in div !</span>
+	</div>
+
+	<!-- ABBREVIATION AND ACRONYM-->
+	<p>This is the <abbr title="World Wide Web">WWW</abbr>.</p>
+	<p>I call you <acronym title="as soon as possible">ASAP</acronym>.</p>
+
+	<!-- LINKS -->
+	<a href="http://www.google.fr" target="_blank" title="Link to Google">Google</a>
+
+	<!-- BLOCKQUOTE -->
+	<blockquote cite="http://www.macleans.ca/education/uniandcollege/why-we-should-forget-einsteins-tree-climbing-fish/">
+		Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid. <br>
+		<cite>A random guy in universe.</cite>
+	</blockquote>
+
+	<!-- BUTTON -->
+	<button>CLICK ME ! Thanks.</button>
+
+	<!-- LINE BREAK -->
+	<p>Hello there !<br>General Kenobi...</p>
+
+	<!-- REVERSE TEXT -->
+	<p>Black Mirror | <bdo dir="rtl">Black Mirror</bdo></p>
+
+	<!-- APPLET -->
+	<applet code="#" width="350" height="350">
+		Code for Java applet here.
+	</applet>
+
+	<!-- LISTS -->
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<ol>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ol>
+
+	<!-- IMAGES -->
+	<figure>
+		<img src="img/vader.gif" alt="Darth Vader dancing" width="300" height="auto" />
+		<figcaption>Darth Vader dancing</figcaption>
+	</figure>
+
+	<img src="img/breaking-bad.jpg" width="400" height="auto" alt="Breaking Bad Actors" usemap="#map">
+	<map name="map">
+		<area shape="rect" coords="10,10,190,250" target="_blank" alt="Bryan Cranston" href="img/Bryan-Cranston.jpg">
+		<area shape="circle" coords="295,100,90" target="_blank" alt="Aaron Paul" href="img/Aaron-Paul.jpg">
+	</map>
+
+	<!-- ELEMENTS -->
+	<section style="width:100%;">
+		<header style="width:100%; text-align: center; background-color: #9b59b6">
+			<p>Header</p>
+		</header>
+		<nav style="width:100%; text-align: center; background-color: #1abc9c">
+			<p>Nav bar</p>
+		</nav>
+		<aside style="width:20%; float: right; text-align: center; background-color: #3498db">
+			<p>Here, aside element.</p>
+		</aside>
+		<article style="width:80%; float: left; text-align: center; background-color: #2ecc71">
+			<p>Here, there is an article.</p>
+		</article>
+		<footer style="width:100%; text-align: center; background-color: #34495e">
+			<p>Footer</p>
+			<details>
+				<summary>Details</summary>
+				<p>Some details</p>
+				<p>Others details</p>
+			</details>
+		</footer>
+	</section>
+
+	<!-- TABLE -->
+	<table style="width:100%; text-align: center;">
+		<caption>Some characters of GoT</caption>
+		<colgroup>
+			<col style="background-color: #7f8c8d">
+			<col style="background-color: #e74c3c">
+			<col style="background-color: #f1c40f">
+		</colgroup>
+		<tr>
+			<th>Stark</th>
+			<th>Targaryen</th>
+			<th>Lannister</th>
+		</tr>
+		<tr>
+			<td>Eddard</td>
+			<td>Aerys</td>
+			<td>Tywin</td>
+		</tr>
+		<tr>
+			<td>Robb</td>
+			<td>Daenerys</td>
+			<td rowspan="2">Tyrion</td>
+		</tr>
+		<tr>
+			<td colspan="2">Jon Snow</td>
+		</tr>
+	</table>
+
+
+
+	<!-- AUDIO -->
+	<audio controls>
+		<!-- Source : https://freesound.org/people/StivArts/sounds/417559 -->
+		<source src="sound/music.mp3" type="audio/mpeg">
+  		Your browser doesn't support the audio tag.
+	</audio>
+
+	<!-- ADRESS -->
+	<address>
+		Marc Lunel<br>
+		See my work on <a href="https://www.github.com/MarcLunel">Github</a><br>
+		Contact me at <a href="mailto:marc.l64@outlook.fr">this email</a>
+	</address>
+
+</body>
+</html>
