@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
+	<!-- THANKS TO W3SCHOOLS (www.w3schools.com) for docs -->
+
 	<!-- TITLES -->
 	<h1>This is heading 1</h1>
 	<h2>This is heading 2</h2>
@@ -17,15 +19,21 @@
 	<h6>This is heading 6</h6>
 
 	<!-- TEXT -->
-	<p>This is paragraph.</p>
-	<p>I am <b>Marc</b>. What do you think about <i>Tim Berners-Lee</i> ? He <q>seems</q> to be a <u>good guy</u>. DID YOU HEAR ? <big>HE IS A GOOD GUY !</big></p>
+	<p>This is paragraph. And there are some words at <sup>the top</sup> and at <sub>the bottom</sub> of the line.</p>
+	<p>Hi, I am <del>Ted</del> <ins>Marc</ins>. What do you <b>think</b> about <i>Tim Berners-Lee</i> ? He <q>seems</q> to be a <u>good guy</u> because he has created the <mark>World Wide Web</mark>. <small>DID YOU HEAR ?</small> <big>HE IS A GOOD GUY !</big></p>
 	<center>Hey ! I am in the center !</center>
 	<p><em>Emphasized text</em><br>
 	<strong>Strong text</strong><br>
 	<code>A piece of computer code</code><br>
 	<samp>Sample output from a computer program</samp><br>
 	<kbd>Keyboard input</kbd><br>
-	<var>Variable</var></p>
+	<var>Variable</var>
+	<pre>Preformatted text</pre></p>
+
+	<!-- TEMPLATE -->
+	<template>
+		<p>Hey ! The clients can't see me but I'm here !</p>
+	</template>
 
 	<!-- INLINE BLOCK ELEMENT -->
 	<div>
@@ -44,9 +52,6 @@
 		Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid. <br>
 		<cite>A random guy in universe.</cite>
 	</blockquote>
-
-	<!-- BUTTON -->
-	<button>CLICK ME ! Thanks.</button>
 
 	<!-- LINE BREAK -->
 	<p>Hello there !<br>General Kenobi...</p>
@@ -70,6 +75,16 @@
 		<li>Two</li>
 		<li>Three</li>
 	</ol>
+	<dl>
+		<dt>Jedi</dt>
+		<dd>Obiwan</dd>
+		<dd>Yoda</dd>
+		<dd>Windu</dd>
+		<dt>Sith</dt>
+		<dd>Darth Maul</dd>
+		<dd>Darth Vader</dd>
+		<dd>Darth Sidious</dd>
+	</dl>
 
 	<!-- IMAGES -->
 	<figure>
@@ -84,28 +99,105 @@
 	</map>
 
 	<!-- ELEMENTS -->
-	<section style="width:100%;">
-		<header style="width:100%; text-align: center; background-color: #9b59b6">
-			<p>Header</p>
-		</header>
-		<nav style="width:100%; text-align: center; background-color: #1abc9c">
-			<p>Nav bar</p>
-		</nav>
-		<aside style="width:20%; float: right; text-align: center; background-color: #3498db">
-			<p>Here, aside element.</p>
-		</aside>
-		<article style="width:80%; float: left; text-align: center; background-color: #2ecc71">
-			<p>Here, there is an article.</p>
-		</article>
-		<footer style="width:100%; text-align: center; background-color: #34495e">
-			<p>Footer</p>
-			<details>
-				<summary>Details</summary>
-				<p>Some details</p>
-				<p>Others details</p>
-			</details>
-		</footer>
-	</section>
+	<main>
+		<section style="width:100%;">
+			<header style="width:100%; text-align: center; background-color: #9b59b6">
+				<p>Header</p>
+			</header>
+			<nav style="width:100%; text-align: center; background-color: #1abc9c">
+				<p>Nav bar</p>
+			</nav>
+			<aside style="width:20%; float: right; text-align: center; background-color: #3498db">
+				<p>Here, aside element.</p>
+			</aside>
+			<article style="width:80%; float: left; text-align: center; background-color: #2ecc71">
+				<p>Here, there is an article.</p>
+			</article>
+			<footer style="width:100%; text-align: center; background-color: #34495e">
+				<p>Footer</p>
+				<details>
+					<summary>Details</summary>
+					<p>Some details</p>
+					<p>Others details</p>
+				</details>
+			</footer>
+		</section>
+	</main>
+
+	<!-- FORMS -->
+	<form action="" method="POST">
+		<fieldset>
+			<legend>One Piece</legend>
+			<label for="characters">Character :</label>
+			<select id="characters" required>
+				<optgroup label="Straw Hat">
+					<option value="luffy">Luffy</option>
+					<option value="zoro">Zoro</option>
+					<option value="usopp">Usopp</option>
+					<option value="nami">Nami</option>
+				</optgroup>
+				<optgroup label="Marines">
+					<option value="sengoku">Sengoku</option>
+					<option value="kizaru">Kizaru</option>
+					<option value="garp">Garp</option>
+					<option value="smoker">Smoker</option>
+				</optgroup>
+			</select><br>
+			<label for="fruit">Do you want a devil fruit ?</label>
+			<input type="checkbox" name="fruit" id="fruit" required/><br>
+			<label for="voyagedate">When do you want start your voyage ?</label>
+			<input type="datetime-local" name="datetime" id="voyagedate" required><br>
+			<label for="voyagereturn">When do you want go back ?</label>
+			<input type="date" name="date" id="voyagereturn" required><br>
+			<label for="month">What is your favorite month ?</label>
+			<input type="month" name="month" id="month" required><br>
+			<label for="week">And your favorite week ?</label>
+			<input type="week" name="week" id="week" required><br>
+			<label for="time">And your favorite hour ?</label>
+			<input type="time" name="time" id="time" required><br>
+			<label for="ships">Number of ships ?</label>
+			<input type="number" name="ships" id="ships"><br>
+			<label for="crew">Crew size ?</label>
+			<input type="range" step="1" min="3" max="99" name="crew" id="crew" required><br>
+			<label for="yescannon">Do you know use cannon ? Yes </label>
+			<input type="radio" name="cannon" id="yescannon">
+			<label for="yescannon">No</label>
+			<input type="radio" name="cannon" id="nocannon"><br>
+			<label for="color">Color of flag :</label>
+			<input type="color" id="color" name="color" required/><br>
+			<label for="url">Do you have a website of pirates ?</label>
+			<input type="url" id="url" name="url"/><br>
+			<label for="CV">Ok pirate, send us your CV (10MB max)</label>
+			<input type="file" name="CV" id="CV" formenctype="multipart/form-data"/>
+			<input type="hidden" name="MAX_FILE_SIZE" value="10485760" /><br> <!-- 10MB Max -->
+			<!-- Source : https://www.flaticon.com/authors/popcorns-arts -->
+			<input type="reset" name="reset"/><br>
+			<input type="image" name="send" width="50" src="img/send.png"/>
+		</fieldset>
+	</form>
+	<hr>
+	<form action="" method="POST" id="registerForm">
+		<fieldset>
+			<legend>Register</legend>
+			<label for="name">Username :</label>
+			<input type="text" id="name" name="pseudo" required/><br>
+			<label for="password">Password :</label>
+			<input type="password" id="password" name="password" required/><br>
+			<label for="email">Email :</label>
+			<input type="email" id="email" name="email" required/><br>
+			<label for="tel">Tel</label>
+			<input type="tel" name="tel" id="tel"/><br>
+			<textarea placeholder="Some questions ?" name="questions" form="registerForm"></textarea><br>
+			<button type="submit">Send</button>
+		</fieldset>
+	</form>
+	<form action="" method="GET">
+		<fieldset>
+			<legend>Search</legend>
+			<label for="search">Do you want search something ?</label>
+			<input type="search" id="search" name="search"/>
+		</fieldset>
+	</form>
 
 	<!-- TABLE -->
 	<table style="width:100%; text-align: center;">
@@ -115,27 +207,43 @@
 			<col style="background-color: #e74c3c">
 			<col style="background-color: #f1c40f">
 		</colgroup>
-		<tr>
-			<th>Stark</th>
-			<th>Targaryen</th>
-			<th>Lannister</th>
-		</tr>
-		<tr>
-			<td>Eddard</td>
-			<td>Aerys</td>
-			<td>Tywin</td>
-		</tr>
-		<tr>
-			<td>Robb</td>
-			<td>Daenerys</td>
-			<td rowspan="2">Tyrion</td>
-		</tr>
-		<tr>
-			<td colspan="2">Jon Snow</td>
-		</tr>
+		<thead>
+			<tr>
+				<th>Stark</th>
+				<th>Targaryen</th>
+				<th>Lannister</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td>Eddard</td>
+				<td>Aerys</td>
+				<td>Tywin</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>Robb</td>
+				<td>Daenerys</td>
+				<td rowspan="2">Tyrion</td>
+			</tr>
+			<tr>
+				<td colspan="2">Jon Snow</td>
+			</tr>
+		</tbody>
 	</table>
 
+	<!-- EXTERNAL APPLICATION CALL -->
+	<!-- <embed src="" /> -->
 
+	<!-- SUPPORT SCRIPT ? -->
+	<script>
+		document.write("Hello");
+	</script><br>
+	<noscript>Sorry, your browser doesn't support JavaScript!</noscript>
+
+	<!-- PROGRESS BAR -->
+	<progress value="45" max="100"></progress><br>
 
 	<!-- AUDIO -->
 	<audio controls>
@@ -143,6 +251,15 @@
 		<source src="sound/music.mp3" type="audio/mpeg">
   		Your browser doesn't support the audio tag.
 	</audio>
+
+	<!-- VIDEO -->
+	<video width="320" height="240" controls>
+		<source src="#" type="video/mp4">
+		<source src="#" type="video/ogg">
+		<track src="#" kind="subtitles" srclang="en" label="English">
+		<track src="#" kind="subtitles" srclang="no" label="Norwegian">
+		Your browser doesn't support the video tag.
+	</video>
 
 	<!-- ADRESS -->
 	<address>
